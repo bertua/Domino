@@ -15,12 +15,6 @@ public class Player{
         this.name = name;
     }
 
-    public void initialDraw(Piece piece){
-        for (int i = 0; i < 7; i++) {
-            this.draw(piece);
-        }
-    }
-
     public void draw(Piece piece){
         this.hand.add(piece);
     }
