@@ -20,4 +20,20 @@ public class Table{
         }
     }
 
+    public int mostRelevantHand(){
+        int mostRelevant = 0;
+        int playerMostRelevantPiece;
+        for(int i = 0; i < players.size(); i++){
+            playerMostRelevantPiece = players.get(i).mostRelevantPiece();
+            if(mostRelevant > playerMostRelevantPiece){
+                mostRelevant = playerMostRelevantPiece;
+                currentPlayer = i;
+            }
+
+        }
+        return mostRelevant;
+    }
+
+
+
 }

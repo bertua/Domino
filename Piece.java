@@ -41,6 +41,13 @@ public class Piece{
         this.hidden = hidden;
     }
 
+    public boolean isPair(){
+        return this.n1 == this.n2;
+    }
+
+    public int numberPiece(){
+        return this.n1 + this.n2;
+    }
 
 
 }
