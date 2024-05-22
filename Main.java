@@ -11,11 +11,33 @@ public class Main{
         input.nextLine();
 
         for (int i = 0; i < np; i++){
-            System.out.print("Player name" + (i+1) + ": ");
+            System.out.print("Player " + (i+1) + " name: ");
             String name = input.nextLine();
             Player player = new Player(name);
             table.addPlayer(player);
         }
+
+        table.initialDraw();
+        table.mostRelevantHand();
+        int currentPlayer = table.getCurrentPlayer();
+        while (true) {
+            System.out.println(table.getPlayers().get(currentPlayer).getName() + "'s turn:");
+
+            for (int i = 0; i <) {
+                
+                
+                
+                for(Piece piece : player.getHand()){
+                    System.out.print(piece);
+                }
+            }
+        
+
+
+
+        }
+
+
 
         if(deck.getPieces().isEmpty()){
             

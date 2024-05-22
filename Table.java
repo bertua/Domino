@@ -12,7 +12,15 @@ public class Table{
         this.deck = deck;
     }
 
-    public void initialDraw(Piece piece){
+    public ArrayList<Player> getPlayers(){
+        return this.players;
+    }
+
+    public int getCurrentPlayer(){
+        return this.currentPlayer;
+    }
+
+    public void initialDraw(){
         for(int i = 0; i < players.size(); i++){
             for (int j = 0; j < 7; j++) {
                 this.players.get(i).draw(this.deck.pickPiece());

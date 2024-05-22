@@ -33,5 +33,9 @@ public class Player{
         return mostRelevant;
     }
 
+    public Piece play(int piece) {
+        return this.hand.remove(piece);
+    }
+
 
 }

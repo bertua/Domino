@@ -49,5 +49,9 @@ public class Piece{
         return this.n1 + this.n2;
     }
 
+    public String toString(){
+        return this.n1 + "," + this.n2;
+    }
+
 
 }
