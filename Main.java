@@ -22,6 +22,12 @@ public class Main{
         int currentPlayer = table.getCurrentPlayer();
         while (true) {
             System.out.println(table.getPlayers().get(currentPlayer).getName() + "'s turn:");
+            table.getPlayers().get(currentPlayer).printHand();
+            for (int i =0; i<table.getPlayers().get(currentPlayer).getHand().size(); i++) {
+                System.out.print(" "+ i +"  ");
+            }
+            System.out.println("");
+
 
             for (int i = 0; i <) {
                 

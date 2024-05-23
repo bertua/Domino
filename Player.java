@@ -37,5 +37,12 @@ public class Player{
         return this.hand.remove(piece);
     }
 
+    public void printHand(){
+        for(int i = 0; i < this.hand.size(); i++){
+            System.out.print(this.hand.get(i) + " ");
+        }
+        System.err.println();
+    }
+
 
 }
